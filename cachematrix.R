@@ -23,7 +23,6 @@ makeCacheMatrix <- function(x = matrix()) {
     list(set = set, get = get, setinvs = setinvs, getinvs = getinvs)
 }
 
-
 ## cacheSolve accepts an object of type makeCacheMatrix, will check if the matrix in it is invertable. If it is,
 ##it will check if this object's matrix has already been inverted; if so, it will return the inverse;
 ##if not, it wil invert (solve), store that value in the object cache, and return the inverse.
