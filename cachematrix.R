@@ -24,7 +24,7 @@ makeCacheMatrix <- function(x = matrix()) {
 }
 
 ## cacheSolve accepts an object of type makeCacheMatrix, will check if the matrix in it is invertable. If it is,
-##it will check if this object's matrix has already been inverted; if so, it will return the inverse;
+##it will check if this object's matrix has already been inverted; if so, it will return the cached inverse;
 ##if not, it wil invert (solve), store that value in the object cache, and return the inverse.
 
 cacheSolve <- function(x, ...) {
